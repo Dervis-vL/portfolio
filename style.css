@@ -162,11 +162,26 @@ div.col-content {
 }
 
 div.text-with-vert-line {
-    border-left: 4px solid var(--color1);
+    /* border-left: 4px solid var(--color1);
     padding-left: 8px;
     height: 50px;  
-    display: inline-block;
+    display: inline-block; */
+    padding-left: 8px;
+    max-width: 780px;
+    position: relative;
+    margin: 0px auto;
 }
+
+.text-with-vert-line:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 4px;
+    height: 34px;
+    background: var(--color1);
+}
+
 
 div.text-with-vert-line p {
     margin-top: 0;
@@ -276,6 +291,11 @@ a.back:hover {
 img.portfolio {
     width: 70%;
     max-width: 475px;
+}
+
+img.portfolio2 {
+    width: 70%;
+    max-width: 250px;
 }
 
 .display-mobile {
@@ -400,6 +420,11 @@ img.portfolio {
 
     img.portfolio {
         width: 100%;
+    }
+
+    img.portfolio2 {
+        width: 100%;
+        max-width: 200px;
     }
 
     div.separator-1 {
