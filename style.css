@@ -236,6 +236,12 @@ div.frame img {
     position: relative;
 }
 
+.wintersport-header {
+    height: 400px;
+    background: url(images/wintersport.png) no-repeat center/cover;
+    position: relative;
+}
+
 .portfolio-header-title {
     color: white;
     font-size: 26px;
