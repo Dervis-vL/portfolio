@@ -308,6 +308,18 @@ img.portfolio2 {
     display: none;
 }
 
+table.wintersport-times {
+    width: 500px;
+    border: 1px solid;
+    border-color: black;
+}
+
+th, td {
+    width: 500px;
+    border: 1px solid;
+    border-color: grey;
+}
+
 /* Responsive design mobile device */
 @media only screen and (max-width: 767px) {
     img.cover_profile {
