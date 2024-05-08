@@ -39,15 +39,28 @@
     <div class="section">
         <div class="text-with-vert-line">
             <p>
-                For CollaborAll, I developed a new Python package v2 that asynchronously sends requests to the ANTCDE API. 
+                I created a Python package called Civil Engineering Toolbox, housing convenient calculations and data models tailored for civil engineers. 
             </p><p>
-                It was an exciting project where I scripted a process to dynamically fetch the entire data model from Swagger, parse the data, and automatically generate data models with classes and methods in a Python file.
+                This package streamlines access to the Bridge class, which I designed to standardize structural data across the company. 
             </p><p>
-                This automation empowers us to establish CI/CD pipelines in GitLab, which, upon trigger, fetch the data model, check for new information, and automatically generate the models, thus updating the package seamlessly.
+                The class encompasses foundational data, determines in-situ bridge deck thickness, and identifies prefab beam types when applicable. 
             </p><p>
-                Within the same pipeline, version incrementation occurs, followed by pytest testing, linting, and validation of correct docstrings.
+                Its data model encapsulates the entire structure's geometry, facilitates rapid quantity estimation, 
+                and includes reinforcement information along with relevant normative factors.
             </p><p>
-                Furthermore, a build is generated on Read the Docs, and the package is uploaded to the <a href="https://pypi.org/project/ANTConnect/">PyPI server</a>, with GitLab pages generated—all seamlessly automated.
+                Applicable to various bridge types, this object seamlessly integrates into automation tools such as the <a href="portfolio-traffic-bridge-tool.html">Traffic Bridge Tool</a>,
+                <a href="portfolio-rfem-wrapper.html">RFEM 6 Wrapper</a>, and <a href="portfolio-bridge-web-app.html">3D Bridge Builder web app</a>. I spearheaded the data model's development and refactoring efforts. 
+            </p><p>
+                As the package owner, I oversee all aspects, including issue management and bug resolution. 
+            </p><p>
+                Additionally, I collaborate internally with civil engineers to identify and standardize other structural elements into data models. 
+            </p><p>
+                Existing Excel sheets commonly used by civil engineers have been incorporated into the toolbox. With just a few lines of code, 
+                a civil engineer can extract results from an Excel sheet in the traditional manner.
+            </p><p>
+                This package facilitates a more structured approach to data transfer and collection company-wide. 
+            </p><p>
+                Organizing this data sets the stage for future advancements, bringing us closer to generative design through comprehensive data model aggregation.
             </p><p>
                 <u>Technologies:</u> <b> PYTHON, RFEM, REVIT, DYNAMO, GITLAB, POETRY, VSCODE, GIT</b>
             </p>
@@ -55,8 +68,8 @@
 
         <div style="text-align: center;
             margin-top: 30px;">
-            <a href="https://antcde.io/" target="_blank"><img class="portfolio" src="images/Traffic Bridges.png"/></a>
-            <a style="display: block; margin-top: 8px;" href="https://antcde.io/" target="_blank">Link to the project</a>
+            <a href="" target="_blank"><img class="portfolio" src="images/civil-engineering-toolbox_DALL-E.png"/></a>
+            <a style="display: block; margin-top: 8px;" href="" target="_blank">Link to the project</a>
         </div>
 
     </div>
