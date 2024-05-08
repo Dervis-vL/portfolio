@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>3D Bridge Builder</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/Dervis_icon_1.png"/>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="portfolio-header">
+        <div class="text-with-vert-line"
+            style="margin-left: 16px; height: 45px;">
+            <p class="portfolio-header-title">Dervis van Leersum</p>
+        </div>
+
+        <a class="contact_me_portfolio" 
+            style="position: absolute; right: 20px; top: 4px;" 
+            href="mailto:dervis.vanleersum@gmail@@com?subject=Say%20hi%20to%20Dervis%20van%20Leersum" onclick="this.href=this.href.replace('@@', '.')">CONTACT ME</a>
+    </div>
+
+    <!-- GRAY SECTION TITLES -->
+    <div class="section gray-section-1"
+        style="position:relative;">
+
+        <div class="separator-1"></div>
+
+        <h1 class="portfolio">Portfolio</h1>
+        <h2 class="portfolio">3D Bridge Builder Web App</h2>
+
+        <a class="back" 
+            style="position: absolute; left: 20px; top: 4px;" 
+            href="index.html">Back</a>
+    </div>
+
+    <!-- CONTENT SECTION -->
+    <div class="section">
+        <div class="text-with-vert-line">
+            <p>
+                I conceptualized a plan to develop a web app aimed at facilitating input data for the <a href="portfolio-traffic-bridge-tool.html">Traffic Bridge Tool</a>.
+            </p><p>
+                This web app provides a user interface displaying real-time input parameters within a 3D bridge visualization using Unity. 
+            </p><p>
+                The backend operates on a microservices architecture. One service integrates the Traffic Bridge Tool, 
+                while another estimates construction costs based on input data, and yet another calculates the Environmental Cost Indicator (MKI) score. 
+            </p><p>
+                The frontend dynamically presents construction costs and MKI scores. The app communicates results with <a href="https://antcde.io/">ANT CDE</a>.
+            </p><p>
+                The project aims to bridge the gap between clients and contractors by simplifying bridge design. 
+            </p><p>
+                It empowers government agencies or architects to provide draft designs early on, expediting permit applications. 
+            </p><p>
+                Within this endeavor, I conceptualized the microservices architecture, authored the project plan, and serve as the product owner during development.
+            </p><p>
+                The web app is currently in the development phase.
+            </p><p>
+                <u>Technologies:</u> <b> PYTHON, JIRA, SCRUM, GITLAB, POETRY, VSCODE, GIT</b>
+            </p>
+        </div>
+
+        <div style="text-align: center;
+            margin-top: 30px;">
+            <a href="" target="_blank"><img class="portfolio" src="images/web-app.png"/></a>
+            <a style="display: block; margin-top: 8px;" href="" target="_blank">Link to the project</a>
+        </div>
+
+    </div>
+
+    <!-- FRAME -->
+    <iframe src="contact-frame.html" scrolling="no"/>
+</body>
+</html>

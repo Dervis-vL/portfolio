@@ -189,7 +189,7 @@ div.text-with-vert-line p {
 
 div.vertical-bar {
     height: 50px;
-    width: 4px;
+    width: 5px;
     background-color: var(--color1);
     margin-right: 8px;
 }
@@ -314,7 +314,13 @@ table.wintersport-times {
     border-color: black;
 }
 
-th, td {
+th {
+    width: 500px;
+    border: 1px solid;
+    border-color: grey;
+}
+
+td.image-table-border {
     width: 500px;
     border: 1px solid;
     border-color: grey;
