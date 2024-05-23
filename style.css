@@ -30,7 +30,7 @@ iframe {
 }
 
 div.cover {
-    background: url(images/cover_overlay.png) no-repeat center/100% 100%, url(images/cover.jpg) no-repeat center/cover;
+    background: url(images/cover_overlay.png) no-repeat center/100% 100%, url(images/cover_3.png) no-repeat center/cover;
     height: 360px;
 }
 
@@ -288,6 +288,17 @@ a.back {
     font-size: 16px;
     margin-top: 15px;
     margin-left: 18px;
+}
+
+a, a:visited, a:visited {
+    text-decoration: none;
+    color: slateblue;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: burlywood;
 }
 
 a.back:hover {
