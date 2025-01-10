@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Dynamo Runner</title>
+    <title>ANT Script Server</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="shortcut icon" type="image/x-icon" href="images/Dervis_icon_1.png"/>
 </head>
@@ -28,7 +28,7 @@
         <div class="separator-1"></div>
 
         <h1 class="portfolio">Portfolio</h1>
-        <h2 class="portfolio">Revit/Dynamo Runner Python Package</h2>
+        <h2 class="portfolio">ANT Common Data Engineering Script Server</h2>
 
         <a class="back" 
             style="position: absolute; left: 20px; top: 4px;" 
@@ -39,23 +39,21 @@
     <div class="section">
         <div class="text-with-vert-line">
             <p>
-                For CollaborAll, I developed a new Python package v2 that asynchronously sends requests to the ANTCDE API. 
+                For ANT Common Data Engineering, I developed a Flask-based server application that executes Python scripts within isolated Docker containers. 
             </p><p>
-                It was an exciting project where I scripted a process to dynamically fetch the entire data model from Swagger, parse the data, and automatically generate data models with classes and methods in a Python file.
+                The server receives tasks via a RESTful API endpoint, validates the incoming data, and spins up Docker containers to execute scripts in a secure, containerized environment.
             </p><p>
-                This automation empowers us to establish CI/CD pipelines in GitLab, which, upon trigger, fetch the data model, check for new information, and automatically generate the models, thus updating the package seamlessly.
+                The architecture incorporates Gunicorn for production-grade WSGI serving with configurable workers and threads for scalability. I implemented a robust task management system using SQLite to track active tasks and prevent duplicate execution, along with comprehensive error handling and logging capabilities.
             </p><p>
-                Within the same pipeline, version incrementation occurs, followed by pytest testing, linting, and validation of correct docstrings.
+                The server supports configurable Python versions (3.8-3.12) and includes debug modes for development. The entire application is containerized with Docker Compose for easy deployment. All incoming scripts are wrapped with necessary imports and API connections, ensuring consistent execution environments across all tasks.
             </p><p>
-                Furthermore, a build is generated on Read the Docs, and the package is uploaded to the <a href="https://pypi.org/project/ANTConnect/">PyPI server</a>, with GitLab pages generated—all seamlessly automated.
-            </p><p>
-                <u><b>Technologies:</b></u> <b> PYTHON, RFEM, REVIT, DYNAMO, GITLAB, POETRY, VSCODE, GIT</b>
+                <u><b>Technologies:</b></u> <b> PYTHON, FLASK, DOCKER, DEVOPS, SQLITE, GUNICORN, DOCKER-COMPOSE, POETRY, VSCODE, GIT</b>
             </p>
         </div>
 
         <div style="text-align: center;
             margin-top: 30px;">
-            <a href="https://antcde.io/" target="_blank"><img class="portfolio" src="images/Traffic Bridges.png"/></a>
+            <a href="https://antcde.io/" target="_blank"><img class="portfolio" src="images/antconnect.png"/></a>
             <a style="display: block; margin-top: 8px;" href="https://antcde.io/" target="_blank">Link to the project</a>
         </div>
 
